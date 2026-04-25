@@ -1,0 +1,128 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/public/fonts/Rubik-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/public/fonts/Rubik-Bold.ttf");
+  font-weight: bold;
+}
+body {
+  background-color: #020524 !important;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 5px;
+  background-color: white;
+  min-height: 90vh;
+  /* overflow: scroll; */
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.wraper {
+  min-height: 80vh;
+  max-height: 85vh;
+  overflow: scroll;
+}
+/* ===================== */
+/* Main Layout */
+/* ===================== */
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* width: 50%;
+  max-width: 600px;
+  min-width: 300px; */
+}
+
+.todo {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2b2d42;
+  color: white;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.todo-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.todo:hover {
+  background-color: #373a47;
+  padding: 12px 20px;
+}
+
+.todo-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/* ===================== */
+/* Media Queries */
+/* ===================== */
+
+/* شاشات أقل من 768px (تابلت وموبايل) */
+@media (max-width: 768px) {
+  .todo-list,
+  .add-todo {
+    width: 90%;
+  }
+
+  .add-todo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-todo input,
+  .add-todo button {
+    width: 100%;
+    border-radius: 5px;
+    border-right: 2px solid #9a9a9b;
+  }
+
+  .add-todo button {
+    margin-top: 10px;
+  }
+
+  .todo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .todo-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
