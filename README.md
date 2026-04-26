@@ -14,9 +14,10 @@ Users can add, edit, delete, complete, and filter tasks, with data saved automat
 
 ## Screenshot
 
-![React Todo App Screenshot](src/assets/React-todo-App-Screenshot.jpg)
+![React Todo App Screenshot](src/assets/React-todo-App-Screenshot.png)
 
-![React Todo App Screenshot](./src/assets/React-todo-App-Screenshot.jpg)
+![React Todo App Screenshot](./src/assets/React-todo-App-Screenshot.png)
+
 
 ## Features
 
